@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new
-    @student.first_name = params[:title]
+    @student.first_name = params[:first_name]
     @post.description = params[:description]
     @post.save
     redirect_to post_path(@post)
